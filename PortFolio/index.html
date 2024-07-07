@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75d5c79eb9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h1><span>ACH</span>YUT</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,<br> I'm <span>Achyut</span></h1>
+            </div>
+        </div>
+    </header>
+    <!-- about ---------------------------------------------------------------------------->
+    <main id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://images.unsplash.com/photo-1719754327382-d86926dc62cc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="500" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ratione quae corporis numquam, ex, eveniet minima officiis animi, alias aliquid tempora voluptatibus. Alias, dolorem sequi expedita recusandae, autem ducimus temporibus vitae pariatur eum cum iste?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Fullstack Developer</li>
+                            <li><span>Frontend</span><br>HTML,CSS,javaScript</li>
+                            <li><span>Library</span><br>React js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Service Based Company</span><br>Some Work</li>
+                            <li><span>Frontend</span><br>HTML,CSS,javaScript</li>
+                            <li><span>Library</span><br>React js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MCA</span><br>web development</li>
+                            <li><span>Frontend</span><br>HTML,CSS,javaScript</li>
+                            <li><span>Library</span><br>React js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Services ------------------------------->
+     <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web Development</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque vel a tenetur est ipsa quam? Quo qui earum, nisi ipsum nam nulla eaque voluptatem.</p>
+                <a href="">Learn More...</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h1>Frontend Development</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque vel a tenetur est ipsa quam? Quo qui earum, nisi ipsum nam nulla eaque voluptatem.</p>
+                <a href="">Learn More...</a>
+             </div>
+             <div>
+                <i class="fa-regular fa-file-code"></i>
+                <h1>Backend Development</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque vel a tenetur est ipsa quam? Quo qui earum, nisi ipsum nam nulla eaque voluptatem.</p>
+                <a href="">Learn More...</a>
+             </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Portfolio-------------------------------- -->
+      <div id="portfolio">
+        <div class="container">
+         <h1 class="subtitle">My Work</h1>
+         <div class="worklist">
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1718919591308-331854adac35?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nostrum minus! Voluptatum nostrum placeat recusandae.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1718919591308-331854adac35?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nostrum minus! Voluptatum nostrum placeat recusandae.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1718919591308-331854adac35?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nostrum minus! Voluptatum nostrum placeat recusandae.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+         <a href="" class="btn">See More</a>
+        </div>
+      </div>
+
+      <!-- Contact----------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">My Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>onestring22@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+916206025863</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com/Achyut22_"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/hymn_achyut/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suryanshu-raj-18a31a21b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                  <form name="submitToGoogleSheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Submit" class="btn btn2">
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 <span>Company Name</span>. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
