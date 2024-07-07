@@ -27,7 +27,7 @@ function playPause(){
 //     },500)
 // }
 
-if(!song.paused){
+if(!song.pause()){
     setInterval(()=>{
        progress.value = song.currentTime; 
     },500)
