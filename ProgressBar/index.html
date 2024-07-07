@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    65%
+                </div>
+            </div>
+        </div>
+
+        <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke="url(#grad1)" stroke-linecap = "round" />
+          </svg>
+          
+
+    </div>
+    <script>
+        let number = document.getElementById("number");
+        let counter = 0;
+        setInterval(()=>{
+            if(counter == 65){
+                clearInterval();
+            }
+            else{
+            counter += 1
+            number.innerHTML = counter + "%"
+            }
+        },18)
+
+    </script>
+</body>
+</html>
